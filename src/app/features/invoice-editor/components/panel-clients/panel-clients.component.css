@@ -1,0 +1,30 @@
+.sidepanel {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  top: 0;
+  height: 100vh;
+  z-index: 2000;
+  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+.sidepanel-left {
+  left: 0;
+  border-right: 1px solid #666;
+}
+
+.sidepanel-left-hide {
+  left: -500px
+}
+
+
+.sidepanel-right {
+  right: 0;
+  border-left: 1px solid #666;
+}
+
+.sidepanel-right-hide {
+  right: -500px
+}

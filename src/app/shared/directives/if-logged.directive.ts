@@ -1,7 +1,6 @@
 import { Directive, OnDestroy, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { Subject } from 'rxjs';
-import { distinctUntilChanged, map, takeUntil } from 'rxjs/operators';
+import { Subject, distinctUntilChanged, map, takeUntil } from 'rxjs';
 import { AppState } from '../../core';
 import { getToken } from '../../core/auth/store/auth.selectors';
 

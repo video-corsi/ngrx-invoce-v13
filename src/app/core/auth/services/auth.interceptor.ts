@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Store } from '@ngrx/store';
-import { Observable, of, throwError } from 'rxjs';
-import { catchError, switchMap, take } from 'rxjs/operators';
+import { Observable, throwError, catchError, switchMap, take } from 'rxjs';
 import { AppState } from '../../core.module';
 import { getToken } from '../store/auth.selectors';
 import * as RouterActions from '../../router/store/router.actions';

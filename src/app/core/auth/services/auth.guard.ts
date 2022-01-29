@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { map, tap } from 'rxjs/operators';
+import { map, tap } from 'rxjs';
 import { AppState } from '../../core.module';
 import { getToken } from '../store/auth.selectors';
 import * as RouterActions from '../../router/store/router.actions';

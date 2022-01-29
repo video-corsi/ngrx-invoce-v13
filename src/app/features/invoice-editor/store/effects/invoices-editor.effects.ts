@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { forkJoin, of } from 'rxjs';
-import { catchError, switchMap, take } from 'rxjs/operators';
+import { forkJoin, of, catchError, switchMap, take } from 'rxjs';
 import { Client, Invoice } from '../../../../model';
 import { AppState } from '../../../../core';
 import { InvoicesService } from '../services/invoices.service';

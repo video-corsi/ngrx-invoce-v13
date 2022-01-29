@@ -1,7 +1,6 @@
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
-import { catchError, map, switchMap } from 'rxjs/operators';
+import { of, catchError, map, switchMap } from 'rxjs';
 import * as ProfileActions from './profile.actions';
 import { ProfileService } from '../services/profile.service';
 
